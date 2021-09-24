@@ -77,7 +77,7 @@ if __name__ == '__main__':
 
     # Data Balance Analysis
     label_count(train_df)
-    # The data is imbalanced, there is over 140k of non-toxic comments vs. a total of just 30k of toxic comments.
+    # The data is imbalanced, there are over 140k of non-toxic comments vs. a total of just 30k of toxic comments.
     # Therefore, lets sample a random set of 15300 clean comments.
 
     train_toxic = train_df[train_df[toxicity_labels].sum(axis=1) > 0]
